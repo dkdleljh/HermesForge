@@ -1,0 +1,4 @@
+[
+  {"name": "집중도 저하", "input": {"focus": 0.4, "difficulty": "high"}, "expected": "review_session"},
+  {"name": "학습 안정", "input": {"focus": 0.8, "difficulty": "medium"}, "expected": "advanced_practice"}
+]

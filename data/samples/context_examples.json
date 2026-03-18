@@ -1,0 +1,26 @@
+{
+  "education": {
+    "user_role": "teacher",
+    "environment": "classroom",
+    "permissions": ["render"],
+    "state_flags": {"focus": "low"},
+    "scenario_profile": "education",
+    "intent": "review"
+  },
+  "game": {
+    "user_role": "player",
+    "environment": "field",
+    "permissions": ["render"],
+    "state_flags": {"resource": "low"},
+    "scenario_profile": "game",
+    "intent": "explore"
+  },
+  "training": {
+    "user_role": "trainer",
+    "environment": "high_risk",
+    "permissions": ["render"],
+    "state_flags": {"urgency": "high"},
+    "scenario_profile": "training",
+    "intent": "evacuate"
+  }
+}

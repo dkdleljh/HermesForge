@@ -1,0 +1,4 @@
+{
+  "domains": ["education", "game", "training"],
+  "note": "실제 bootstrap은 backend plugin registry를 사용합니다."
+}

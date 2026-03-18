@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Noto Sans KR', 'Pretendard', sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #16222f;
+}
+
+.panel {
+  @apply bg-white rounded-xl shadow-soft p-4;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-md px-2 py-1 text-xs font-semibold;
+}

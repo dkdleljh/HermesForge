@@ -1,0 +1,4 @@
+[
+  {"name": "폭풍+자원부족", "input": {"weather": "storm", "resources": "low"}, "expected": "npc_support_event"},
+  {"name": "맑음+자원풍부", "input": {"weather": "clear", "resources": "rich"}, "expected": "rare_loot_branch"}
+]

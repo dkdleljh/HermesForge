@@ -1,0 +1,4 @@
+[
+  {"name": "화재경보", "input": {"emergency": "fire_alarm", "equipment": "partial_failure"}, "expected": "priority_evacuation"},
+  {"name": "화학경보", "input": {"emergency": "chemical_alert", "equipment": "stable"}, "expected": "zone_isolation_check"}
+]
