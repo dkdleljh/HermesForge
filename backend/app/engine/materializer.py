@@ -11,8 +11,7 @@ class ContextAwareMaterializer(Materializer):
     """Context를 반영해 deterministic/weighted 결과를 선택한다."""
 
     def materialize(self, snapshot: Snapshot, context: Context, patches: List[LambdaPatch], mode: str) -> LambdaPatch:
-        return patches[0] # type: ignore
-        pass
+        return BayesianNetworkMaterializer().materialize(snapshot, context, patches, mode)
 
 
 class BayesianNetworkMaterializer(Materializer):
@@ -21,7 +20,6 @@ class BayesianNetworkMaterializer(Materializer):
         self.chaos_engine = chaos_engine
 
     def materialize(self, snapshot: Snapshot, context: Context, patches: List[LambdaPatch], mode: str) -> LambdaPatch:
-        return patches[0] # type: ignore
         if not patches:
             raise ValueError("snapshot에 적용 가능한 patch가 없습니다")
 

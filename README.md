@@ -107,3 +107,11 @@ curl -X POST http://localhost:8000/api/materialize \
 ## 주의사항
 - 본 시스템 출력은 **사실 기록이 아닌 가능역 렌더**입니다.
 - 운영 환경에서는 정책 룰셋/감사 로그/권한 통제를 강화해야 합니다.
+
+<!-- BEGIN RELEASE STATUS -->
+## 최신 배포 정보
+
+- 저장소 버전: `v0.1.1`
+- [변경사항과 검증 범위](RELEASE_NOTES.md)
+- [GitHub 릴리즈](https://github.com/dkdleljh/HermesForge/releases/latest)
+<!-- END RELEASE STATUS -->

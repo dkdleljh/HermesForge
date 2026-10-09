@@ -17,3 +17,6 @@ frontend/.env
 # Runtime artifacts
 *.log
 backend/hermesforge.db
+
+# Generated local state (preserved on disk)
+backend/app/tests/test_hermesforge.db

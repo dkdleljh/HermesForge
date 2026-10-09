@@ -11,7 +11,7 @@ configure_logging(settings.log_level)
 app = FastAPI(
     title="HermesForge API",
     description="사건 사실이 아닌 가능역(Possibility Field) 생성/저장/병합/렌더 엔진",
-    version="0.1.0",
+    version="0.1.1",
 )
 
 app.add_middleware(

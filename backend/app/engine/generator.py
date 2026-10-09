@@ -8,13 +8,11 @@ from app.engine.interfaces import CounterfactualGenerator
 class RuleBasedCounterfactualGenerator(CounterfactualGenerator):
     """Evidence를 규칙 기반 LambdaPatch로 변환한다."""
     def generate(self, evidence_list: List[Evidence]) -> List[LambdaPatch]:
-        return []
-        pass
+        return MLPatchGenerator().generate(evidence_list)
 
 class MLPatchGenerator(CounterfactualGenerator):
     """외부 AI/ML 추론 모델을 모사하여 복잡계 LambdaPatch를 생성한다."""
     def generate(self, evidence_list: List[Evidence]) -> List[LambdaPatch]:
-        return []
         patches: List[LambdaPatch] = []
         for evidence in evidence_list:
             category = evidence.payload.get("category", "general")
